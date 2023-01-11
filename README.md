@@ -25,21 +25,11 @@ WireGuard: fast, modern, secure VPN tunnel.
 
 ## About
 
-[WireGuard®][wireguard] is an extremely simple yet fast and modern VPN that
-utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner,
-and more useful than IPsec, while avoiding the massive headache.
+[WireGuard®][wireguard] This fork aims to make Wireguard available as a client (instead of acting as a server) on Home Assistant installations. 
 
-It intends to be considerably more performant than OpenVPN. WireGuard is
-designed as a general-purpose VPN for running on embedded interfaces and
-supercomputers alike, fit for many different circumstances.
+As (like me myself) several people are asking to have Home Assistant connect as a client to an Wireguard Server I decided to make that possible. 
 
-Initially released for the Linux kernel, it is now cross-platform (Windows,
-macOS, BSD, iOS, Android) and widely deployable,
-including via an Hass.io add-on!
-
-WireGuard is currently under heavy development, but already it might be
-regarded as the most secure, easiest to use, and the simplest VPN solution
-in the industry.
+I haven an ISP that keeps me behind CG-NAT (in Germany also called DS-Lite) so no chance to connect to my home assistant solution from the internet. Only chance is so have an wireguard server running somewhere else (for example a small VPS solution at some hosting company) and connect to that server and on the server expose a port/domain (behind nginx-proxy with SSL encryption) ...
 
 [:books: Read the full add-on documentation][docs]
 
@@ -47,64 +37,11 @@ in the industry.
 
 Got questions?
 
-You have several options to get them answered:
-
-- The [Home Assistant Community Add-ons Discord chat server][discord] for add-on
-  support and feature requests.
-- The [Home Assistant Discord chat server][discord-ha] for general Home
-  Assistant discussions and questions.
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
-
-You could also [open an issue here][issue] GitHub.
-
-## Contributing
-
-This is an active open-source project. We are always open to people who want to
-use the code or contribute to it.
-
-We have set up a separate document containing our
-[contribution guidelines](CONTRIBUTING.md).
-
-Thank you for being involved! :heart_eyes:
+Please [open an issue here][issue] GitHub.
 
 ## Authors & contributors
 
 The original setup of this repository is by [Franck Nijhof][frenck].
-
-For a full list of all authors and contributors,
-check [the contributor's page][contributors].
-
-## We have got some Home Assistant add-ons for you
-
-Want some more functionality to your Home Assistant instance?
-
-We have created multiple add-ons for Home Assistant. For a full list, check out
-our [GitHub Repository][repository].
-
-## License
-
-MIT License
-
-Copyright (c) 2019-2022 Franck Nijhof
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
